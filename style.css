@@ -1,8 +1,21 @@
+:root{
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --primary-color : #38bdf8;
+    --text-main: #f8fafc;
+    --text-sub: #94a3b8;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
 body{
-    background-color: #1a1a1a;
-    color : #ffffff;
-    font-family: 'Pretendard', sans-serif;
-    line-height: 1.6;
+    background-color: var(--bg-color);
+    color : var(--text-main);
+    font-family: 'Pretendard', -apple-system, sans-serif;
+    line-height: 1.7;
 }
 
 .container{
@@ -49,3 +62,18 @@ body{
     background-color: #0056b3;
 }
 
+.navbar{
+    position : fixed; top: 0; width: 100%;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 10%; background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px); z-index: 1000;
+}
+
+.logo{font-size: 1.5rem; font-weight: 800; color: var(--primary-color)}
+.nav-links{display: flex; list-style: none; gap:30px;}
+.nav-links a {color: var(--text-main); text-decoration: none; font-weight: 500;}
+
+.hero { height: 100vh; display: flex; align-items: center; padding: 0 10%; }
+.badge { background: rgba(56, 189, 248, 0.1); color: var(--primary-color); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; }
+.hero h1 { font-size: 3.5rem; margin: 20px 0; line-height: 1.2; }
+.hero p { color: var(--text-sub); font-size: 1.2rem; max-width: 600px; margin-bottom: 30px; }
