@@ -56,9 +56,9 @@ body{
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
-.section-title { text-align: center; font-size: 2.5rem; margin-bottom: 20px; font-weight: 800; color: var(--text-main); }
+.section-title { text-align: center; font-size: 2.2rem; margin-bottom: 20px; font-weight: 800; color: var(--text-main); }
 .section-title span { color: var(--primary-color); }
-.section-desc { text-align: center; font-size: 1.2rem; color: var(--text-sub); line-height: 1.8; }
+.section-desc { text-align: center; font-size: 1rem; color: var(--text-sub); line-height: 1.8; }
 
 /* 네가 설정한 0.4초짜리 스크롤 페이드인 애니메이션 */
 .scroll-fade {
@@ -106,16 +106,6 @@ body{
 .value-card h4 { font-size: 1.3rem; color: var(--primary-color); margin-bottom: 15px; }
 .value-card p { color: var(--text-sub); line-height: 1.6; }
 
-/* 📱 모바일 반응형 처리 */
-@media (max-width: 768px) {
-    .hero h1 { font-size: 2.5rem; }
-    .hero p { font-size: 1rem; }
-    .navbar { padding: 20px 5%; }
-    .profile-container { flex-direction: column; text-align: center; }
-    .profile-image img { width: 250px; height: 250px; }
-    .section { padding: 80px 5%; }
-}
-
 /* --- 프로젝트 상세 페이지 레이아웃 --- */
 .project-detail-section {
     padding: 120px 10% 80px;
@@ -143,12 +133,6 @@ body{
 
 .detail-info h2 { color: var(--primary-color); margin-bottom: 15px; }
 .detail-info p { color: var(--text-sub); line-height: 1.8; }
-
-/* 모바일에서는 위아래로 떨어지게 만들기 */
-@media (max-width: 768px) {
-    .detail-content-grid { grid-template-columns: 1fr; }
-}
-
 
 /* --- 타임라인 (Timeline) UI 핵심 마법 --- */
 .timeline-section {
@@ -286,6 +270,53 @@ code {
     box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
 }
 
+/* --- 햄버거 메뉴 기본 스타일 (데스크톱에선 숨김) --- */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-main) !important;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+
+/* 📱 모바일 반응형 처리 */
 @media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { font-size: 1rem; }
+    .navbar { padding: 20px 5%; }
+    .profile-container { flex-direction: column; text-align: center; }
+    .profile-image img { width: 250px; height: 250px; }
+    .section { padding: 80px 5%; }
+    .detail-content-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr !important; }
+
+    .hamburger{display:flex !important;}
+    .nav-links{
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: rgba(15,23,42,0.95);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+    .nav-links li{margin: 15px 0;}
+    .nav-links.active{right:0}
+
+    .hamburger.toggle .bar:nth-child(1) {transform: translateY(8px) rotate(45deg) !important;}
+    .hamburger.toggle .bar:nth-child(2) {opacity: 0; transform: translateX(-20px);}
+    .hamburger.toggle .bar:nth-child(3) {transform: translateY(-8px) rotate(-45deg) !important;}
+
 }

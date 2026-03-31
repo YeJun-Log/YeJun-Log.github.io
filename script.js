@@ -133,3 +133,17 @@ if (contactForm) {
             });
     });
 }
+
+// --- [모바일 햄버거 메뉴 토글 로직] ---
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        // 메뉴창을 열고 닫음 (active 클래스 추가/제거)
+        navLinks.classList.toggle('active');
+        
+        // 햄버거 버튼을 X 모양으로 바꿈 (toggle 클래스 추가/제거)
+        hamburger.classList.toggle('toggle');
+    });
+}

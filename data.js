@@ -56,4 +56,5 @@ const projectData = [
             { date: "2026.04", title: "중간고사", desc: "1주 ~ 6주차까지의 강의" }
         ]
     }
+    
 ];
