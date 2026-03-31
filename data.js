@@ -8,7 +8,7 @@ const projectData = [
         tags: ["Notion", "System Design"],
         // --- 여기서부터 상세 페이지용 데이터 ---
         detailDesc: "단순한 메모 앱을 넘어, 개인의 지식을 유기적으로 연결하고 관리하는 시스템입니다. 인스타그램 계정(@yejun.debug_log)을 통해 커뮤니티와 함께 모여 그노시코어를 완성하는 것을 목표로 합니다.",
-        image: "https://via.placeholder.com/800x500/1e293b/38bdf8?text=GnosiCore+System",
+        image: "/images/GnosiCore (1).jpg",
         timeline: [
             { date: "2026.03", title: "시스템 기획 및 설계", desc: "핵심 기능 정의 및 초기 커뮤니티 빌딩" },
             { date: "2026.04", title: "프론트엔드 퍼블리싱", desc: "데이터 렌더링 및 동적 웹 포트폴리오 구축" }
