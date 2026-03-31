@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>프로젝트 상세 - YeJun.Debug_Log</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="logo">YeJun.<span>Debug_Log</span></a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html" class="active">Project</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main class="project-detail-section">
+        <header class="detail-header">
+            <span id="detail-badge" class="status-badge"></span>
+            <h1 id="detail-title"></h1>
+        </header>
+
+        <div class="detail-content-grid">
+            <div class="detail-image">
+                <img id="detail-image" src="" alt="프로젝트 이미지">
+            </div>
+            <div class="detail-info">
+                <h2>프로젝트 개요</h2>
+                <p id="detail-desc"></p>
+                <div id="detail-tags" class="tech-stack" style="margin-top: 20px;"></div>
+            </div>
+        </div>
+
+        <div class="timeline-section">
+            <h2>진행 과정 (Timeline)</h2>
+            <ul id="detail-timeline" class="timeline"></ul>
+        </div>
+    </main>
+
+    <script src="../data.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
