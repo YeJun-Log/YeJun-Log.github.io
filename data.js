@@ -22,7 +22,7 @@ const projectData = [
         summary: "C# WinForms를 활용하여 화면을 구성하고 이벤트를 처리하는 애플리케이션 구조 학습.",
         tags: ["C#", ".NET", "WinForms"],
         detailDesc: "C#의 객체지향적 특징을 이해하고, 이벤트 주도(Event-Driven) 방식을 실습하기 위해 직접 코드를 짜며 제작한 데스크톱 애플리케이션입니다.",
-        image: "https://via.placeholder.com/800x500/1e293b/22c55e?text=C%23+WinForms+App",
+        image: "/images/CSharp.png",
         timeline: [
             { date: "2026.03", title: "C# 기초 문법 학습", desc: "클래스, 객체, 상속 등 기초 개념 숙지" },
             { date: "2026.04", title: "UI 및 이벤트 구현", desc: "버튼 클릭 이벤트 및 데이터 처리 로직 작성" }
@@ -36,25 +36,10 @@ const projectData = [
         summary: "논리적 문제 해결 능력 향상을 위한 C++ 기초 문법 습득 및 알고리즘 풀이.",
         tags: ["C++", "Algorithm", "Data Structure"],
         detailDesc: "개발자의 기본기인 효율적인 코드 작성을 위해 자료구조와 알고리즘을 학습합니다. 기초 문법부터 시작해 점진적으로 난이도를 높여가고 있습니다.",
-        image: "https://via.placeholder.com/800x500/1e293b/f8fafc?text=C%2B%2B+Algorithm",
+        image: "/images/solved.ac.png",
         timeline: [
             { date: "2026.03", title: "C++ 기초 뼈대 잡기", desc: "변수, 반복문, 포인터 등 코딩 선생님과 학습 시작" },
             { date: "2026.04", title: "기초 자료구조 적용", desc: "배열과 문자열을 활용한 구현 문제 풀이" }
         ]
-    },
-    {
-        id: "militaryE-Learning",
-        statusClass: "ongoing",
-        statusText: "진행 중",
-        title: "현대종교와 문화 A+",
-        summary: "교양을 쌓기 위한 군 E-러닝 수강.",
-        tags: ["종교", "인문학"],
-        detailDesc: "현대종교와 문화라는 과목을 수강하며, 인간의 종교성과 종교의 역사 및 분류를 체계적으로 학습합니다.",
-        image: "https://via.placeholder.com/800x500/1e293b/f8fafc?text=C%2B%2B+Algorithm",
-        timeline: [
-            { date: "2026.03", title: "수강 시작", desc: "개강" },
-            { date: "2026.04", title: "중간고사", desc: "1주 ~ 6주차까지의 강의" }
-        ]
     }
-    
 ];
