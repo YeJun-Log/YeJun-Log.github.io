@@ -1,15 +1,18 @@
-// 버튼을 클릭했을 때 실행될 함수(기능)
-function sayHello() {
-  alert("Hello!");
-}
+// 스크롤 애니메이션 옵저버 (네가 설정한 0.2값 적용)
+const observerOptions = {
+    threshold: 0.2 // 요소가 화면에 20% 보일 때 작동
+};
 
-window.addEventListener('scroll', () => {
-  const navbar = document.querySelector('.navbar');
-  if (window.scrollY > 50) {
-    navbar.style.boxShadow = '0 10px 30px rgba(0,0,0,0.3)';
-    navbar.style.padding = '15px 10%';
-  } else {
-    navbar.style.boxShadow = 'none';
-    navbar.style.padding = '20px 10%';
-  }
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // 화면에 나타나면 'visible' 클래스를 추가해서 애니메이션 실행
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
+
+// HTML에서 'scroll-fade' 클래스를 가진 모든 요소를 감시
+document.querySelectorAll('.scroll-fade').forEach((el) => {
+    observer.observe(el);
 });
