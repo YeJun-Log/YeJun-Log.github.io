@@ -5,22 +5,23 @@ const projectData = [
         statusText: "진행 중",
         title: "GnosiCore System 구축",
         summary: "인스타그램 커뮤니티와 소통하며 함께 완성해 나가는 개인화 지식 관리 시스템 설계.",
-        tags: ["Notion", "System Design"],
+        tags: ["Notion", "System Design", "Web", "Front-End"],
         // --- 여기서부터 상세 페이지용 데이터 ---
         detailDesc: "단순한 메모 앱을 넘어, 개인의 지식을 유기적으로 연결하고 관리하는 시스템입니다. 인스타그램 계정(@yejun.debug_log)을 통해 커뮤니티와 함께 모여 그노시코어를 완성하는 것을 목표로 합니다.",
         image: "/images/GnosiCore (1).jpg",
         timeline: [
-            { date: "2026.03", title: "시스템 기획 및 설계", desc: "핵심 기능 정의 및 초기 커뮤니티 빌딩" },
-            { date: "2026.04", title: "프론트엔드 퍼블리싱", desc: "데이터 렌더링 및 동적 웹 포트폴리오 구축" }
+            { date: "2026.02", title: "시스템 기획 및 설계", desc: "핵심 기능 정의 및 초기 커뮤니티 빌딩" },
+            { date: "2026.03", title: "Notion 시스템 구현", desc: "Notion 데이터베이스와 API를 이용한 GnosiCore 페이지 구현"},
+            { date: "2026.04", title: "웹 앱 퍼블리싱 기획", desc: "Notion 시스템의 한계를 체감하고, 시스템을 유연하게 실행할 수 있는 웹 앱 구상" }
         ]
     },
     {
         id: "winform",
-        statusClass: "completed",
-        statusText: "완료",
+        statusClass: "ongoing",
+        statusText: "진행 중",
         title: "Windows 폼 데스크톱 앱",
         summary: "C# WinForms를 활용하여 화면을 구성하고 이벤트를 처리하는 애플리케이션 구조 학습.",
-        tags: ["C#", ".NET", "WinForms"],
+        tags: ["C++", "C#", ".NET", "WinForms", "WinUI3"],
         detailDesc: "C#의 객체지향적 특징을 이해하고, 이벤트 주도(Event-Driven) 방식을 실습하기 위해 직접 코드를 짜며 제작한 데스크톱 애플리케이션입니다.",
         image: "/images/CSharp.png",
         timeline: [

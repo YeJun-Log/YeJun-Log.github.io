@@ -92,9 +92,35 @@ body{
 .tech-stack span { background: #0f172a; border: 1px solid #475569; padding: 4px 12px; border-radius: 6px; font-size: 0.85rem; color: #cbd5e1; }
 
 /* --- about.html (어바웃 페이지) --- */
-.about-section { padding: 120px 10% 80px; max-width: 1200px; margin: 0 auto; min-height: 100vh; }
-.profile-container { display: flex; align-items: center; gap: 60px; margin-bottom: 100px; }
+.about-section {
+    /* 1. 자식 요소들을 중앙으로 모으기 위해 flex 설정 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    padding: 120px 20px 80px;
+    max-width: 1600px;
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    
+    /* 2. 중앙 정렬을 하려면 전체 너비가 부모보다 작아야 함 */
+    width: 100%;
+    max-width: 1200px; /* 상황에 맞춰서 적절히 조절해봐 */
+    
+    /* 3. margin 속성 합치기 (상단 0, 좌우 auto, 하단 100px) */
+    margin-bottom: 100px;
+}
+
 .profile-image img { 
+    align-items: center;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: high-quality;
     backface-visibility: hidden;
@@ -104,10 +130,26 @@ body{
 .profile-text h2 { font-size: 2.8rem; margin-bottom: 10px; color: var(--text-main); }
 .profile-text h2 span { color: var(--primary-color); }
 .profile-text .subtitle { color: var(--text-sub); font-size: 1.3rem; margin-bottom: 30px; font-weight: bold; }
-.bio-content p { color: var(--text-main); line-height: 1.8; font-size: 1.05rem; margin-bottom: 15px; }
-.core-values h3 { font-size: 2.2rem; text-align: center; margin-bottom: 50px; color: var(--text-main); }
-.value-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-.value-card { background: var(--card-bg); padding: 40px 30px; border-radius: 16px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.05); transition: var(--transition); }
+.bio-content p { color: var(--text-sub); line-height: 1.8; font-size: 1.05rem; margin-bottom: 15px; }
+.core-values h3 { font-size: 2.2rem; text-align: center; margin-bottom: 0px; color: var(--text-main); }
+.value-grid { 
+    justify-content: center; 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    max-width: 1600px; 
+    margin: 0 auto; 
+    padding: 40px 0;
+}
+.value-card { 
+    width: 100%; 
+    background: var(--card-bg);
+    padding: 50px 30px; 
+    border-radius: 16px; 
+    text-align: center; 
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+    transition: var(--transition); 
+}
 .value-card:hover { transform: translateY(-5px); border-color: var(--primary-color); }
 .value-card h4 { font-size: 1.3rem; color: var(--primary-color); margin-bottom: 15px; }
 .value-card p { color: var(--text-sub); line-height: 1.6; }
@@ -332,7 +374,6 @@ code {
     .hamburger.toggle .bar:nth-child(1) {transform: translateY(8px) rotate(45deg) !important;}
     .hamburger.toggle .bar:nth-child(2) {opacity: 0; transform: translateX(-20px);}
     .hamburger.toggle .bar:nth-child(3) {transform: translateY(-8px) rotate(-45deg) !important;}
-
 }
 
 /* 1. 히어로 섹션 가로 배치 설정 */
@@ -341,7 +382,7 @@ code {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 5%;
     width: 100%;
@@ -410,5 +451,9 @@ code {
     .section{
         position: relative;
         clear:both;
+    }
+    .value-grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 }
