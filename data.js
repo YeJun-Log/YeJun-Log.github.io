@@ -23,7 +23,7 @@ const projectData = [
         summary: "Python과 Gemini API를 활용한, 최신 국제 경제 트윗 요약 및 메일 발송 서비스",
         tags: ["Python", "GEMINI", "GitHub"],
         detailDesc: "구글 시트에서 구독자와 트위터 계정을 불러오고, Gemini Flash Model API를 통해 요약하여 투자 리서치 보고서를 만든 후, GitHub Actions를 통해 매주마다 자동으로 메일로 발송하는 서비스입니다.",
-        image: "/images/CSharp.png",
+        image: "/images/XummaryMain.png",
         timeline: [
             { date: "2026.04.02", title: "아이디어 구체화 및 구현 시작", desc: "구현에 Python을 사용하기로 확정, Google AI Studio API 생성 및 트윗 크롤링 사이트 등록" },
             { date: "2026.04.04", title: "요약 보고서 생성 로직 구현 완료", desc: "Gemini API를 활용하여 수집한 트윗을 요약하고, 메일로 발송하는 로직 추가" },
