@@ -16,17 +16,19 @@ const projectData = [
         ]
     },
     {
-        id: "winform",
-        statusClass: "ongoing",
-        statusText: "진행 중",
-        title: "Windows 폼 데스크톱 앱",
-        summary: "C# WinForms를 활용하여 화면을 구성하고 이벤트를 처리하는 애플리케이션 구조 학습.",
-        tags: ["C++", "C#", ".NET", "WinForms", "WinUI3"],
-        detailDesc: "C#의 객체지향적 특징을 이해하고, 이벤트 주도(Event-Driven) 방식을 실습하기 위해 직접 코드를 짜며 제작한 데스크톱 애플리케이션입니다.",
+        id: "x-summary",
+        statusClass: "completed",
+        statusText: "완료",
+        title: "Xummary",
+        summary: "Python과 Gemini API를 활용한, 최신 국제 경제 트윗 요약 및 메일 발송 서비스",
+        tags: ["Python", "GEMINI", "GitHub"],
+        detailDesc: "구글 시트에서 구독자와 트위터 계정을 불러오고, Gemini Flash Model API를 통해 요약하여 투자 리서치 보고서를 만든 후, GitHub Actions를 통해 매주마다 자동으로 메일로 발송하는 서비스입니다.",
         image: "/images/CSharp.png",
         timeline: [
-            { date: "2026.03", title: "C# 기초 문법 학습", desc: "클래스, 객체, 상속 등 기초 개념 숙지" },
-            { date: "2026.04", title: "UI 및 이벤트 구현", desc: "버튼 클릭 이벤트 및 데이터 처리 로직 작성" }
+            { date: "2026.04.02", title: "아이디어 구체화 및 구현 시작", desc: "구현에 Python을 사용하기로 확정, Google AI Studio API 생성 및 트윗 크롤링 사이트 등록" },
+            { date: "2026.04.04", title: "요약 보고서 생성 로직 구현 완료", desc: "Gemini API를 활용하여 수집한 트윗을 요약하고, 메일로 발송하는 로직 추가" },
+            { date: "2026.04.05", title: "구글 시트를 이용해 확장성 극대화", desc: "트위터 계정과 구독자 목록을 구글 시트로 관리하여, 추가 확장성 및 개인정보 보호 수준 향상" },
+            { date: "2026.04.07", title: "개인 포트폴리오 리밸런싱 로직 추가", desc: "VIP를 위해, 개인 투자 포트폴리오를 읽어들여 리밸런싱 조정안을 제공하는 로직 추가" }
         ]
     },
     {

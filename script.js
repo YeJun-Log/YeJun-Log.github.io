@@ -98,8 +98,7 @@ if (currentProjectId && document.getElementById('detail-title')) {
 // --- [Contact 페이지 전용 로직] ---
 // --- [Contact 페이지 전용 로직 (EmailJS 연동)] ---
 
-// 1. EmailJS 초기화 (여기에 네 Public Key를 넣어!)
-// 주의: 따옴표 안에 아까 메모한 키를 정확히 복사해서 넣어.
+
 if (typeof emailjs !== 'undefined') {
     emailjs.init("TCzQtw8e8vnq7EMnG"); 
 }
