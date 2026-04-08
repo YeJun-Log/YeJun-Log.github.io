@@ -25,10 +25,11 @@ const projectData = [
         detailDesc: "구글 시트에서 구독자와 트위터 계정을 불러오고, Gemini Flash Model API를 통해 요약하여 투자 리서치 보고서를 만든 후, GitHub Actions를 통해 매주마다 자동으로 메일로 발송하는 서비스입니다.",
         image: "/images/XummaryMain.png",
         timeline: [
-            { date: "2026.04.02", title: "아이디어 구체화 및 구현 시작", desc: "구현에 Python을 사용하기로 확정, Google AI Studio API 생성 및 트윗 크롤링 사이트 등록" },
+            { date: "2026.04.02", title: "아이디어 구체화 및 구현 시작", desc: "구현에 Python을 사용하기로 확정 / Google AI Studio API 생성 및 트윗 크롤링 사이트 등록" },
             { date: "2026.04.04", title: "요약 보고서 생성 로직 구현 완료", desc: "Gemini API를 활용하여 수집한 트윗을 요약하고, 메일로 발송하는 로직 추가" },
-            { date: "2026.04.05", title: "구글 시트를 이용해 확장성 극대화", desc: "트위터 계정과 구독자 목록을 구글 시트로 관리하여, 추가 확장성 및 개인정보 보호 수준 향상" },
-            { date: "2026.04.07", title: "개인 포트폴리오 리밸런싱 로직 추가", desc: "VIP를 위해, 개인 투자 포트폴리오를 읽어들여 리밸런싱 조정안을 제공하는 로직 추가" }
+            { date: "2026.04.05", title: "구글 시트를 이용해 확장성 극대화", desc: "트위터 계정과 구독자 목록을 구글 시트로 관리하여 추가 확장성 및 개인정보 보호 수준 향상" },
+            { date: "2026.04.07", title: "개인 포트폴리오 리밸런싱 로직 추가", desc: "VIP를 위해 개인 투자 포트폴리오를 읽어들여 리밸런싱 조정안을 제공하는 로직 추가" },
+            { date: "2026.04.08", title: "GitHub Actions 자동화 등록", desc: "GitHub Actions 기능을 활용해 매주 수요일 아침 메일 자동 발송 서비스 구현 완료" }
         ]
     },
     {
